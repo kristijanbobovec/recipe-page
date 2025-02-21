@@ -148,10 +148,19 @@ body {
     gap: var(--spacing-100);
 }
 
+.prepartaion__list__item {
+    padding-left: var(--spacing-200);
+    position: relative;
+}
+
 .prepartaion__list__item::before {
     content: "• ";
-    padding-right: var(--spacing-200);
     color: var(--color-brown-800);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-weight: 700;
 }
 
 .ingredients {
@@ -167,11 +176,17 @@ body {
     gap: var(--spacing-100);
 }
 
+.ingredients__list__item {
+    padding-left: var(--spacing-200);
+    position: relative;
+}
+
 .ingredients__list__item::before {
     content: "• ";
-    padding-right: var(--spacing-200);
+    position: absolute;
     color: var(--color-brown-800);
     font-weight: 700;
+    left: 0;
 }
 
 .instructions {
